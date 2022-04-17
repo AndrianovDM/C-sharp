@@ -71,7 +71,7 @@ else
 Напишите программу, которая на вход принимает число (N), а 
 на выходе показывает все чётные числа от 1 до N.*/
 
-Console.Write("input integer number: ");
+/*Console.Write("input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int current = 1;
 int a;
@@ -82,4 +82,4 @@ while(current <= num)
         {Console.Write(current + " ");
         }
     current++;
-}
+}*/
