@@ -48,3 +48,27 @@ else
     if (day == 7)
        Console.Write("Its Sunday");   
 }*/
+
+
+/* Задача №4 */
+
+/*Console.Write("input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int current;
+
+if (num < 0)
+{
+    current = num;
+    num = num * (-1);
+}
+else
+{
+    current = -1 * num;
+}
+
+while(current <= num)
+{
+    Console.Write(current + " ");
+    // current = current + 1;
+    current++;
+}*/
