@@ -6,6 +6,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 int result = num * num;
 Console.Write("Results is " + result);*/
 
+
 /*Задача №2*/
 
 /*Console.Write("input first integer number:");
@@ -21,6 +22,7 @@ else
 {
     Console.Write("First number is not a quad of second number ");
 }*/
+
 
 /*Задача №3*/
 
@@ -72,6 +74,7 @@ while(current <= num)
     // current = current + 1;
     current++;
 }*/
+
 
 /*Задача №5*/
 
