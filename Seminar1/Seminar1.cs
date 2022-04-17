@@ -72,3 +72,16 @@ while(current <= num)
     // current = current + 1;
     current++;
 }*/
+
+/*Задача №5*/
+
+/*Console.Write("input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num < 100 || num < 999)
+    Console.WriteLine("Incorret number");
+else
+{
+    int a = num % 10;
+    Console.WriteLine("Resulted number is: " + a);
+}*/
