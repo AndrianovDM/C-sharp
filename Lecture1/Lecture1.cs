@@ -66,7 +66,7 @@ Console.Write(max);
 
 
 /*Задача №6*/
-
+/*
 Console.Clear();  //отчистка консоли
 
 // Console.SetCursorPosition(10, 4); // позиция символа в консоли
@@ -112,6 +112,7 @@ while (count < 10000)
     Console.WriteLine("+");
     count++;
 }
+*/
 
 
 
