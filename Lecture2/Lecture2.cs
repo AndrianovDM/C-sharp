@@ -106,7 +106,7 @@ while (index < n)
 
 
 /* Задача №5 */
-
+/*
 void FillArray(int[] collection)
 {
     int length = collection.Length;
@@ -153,6 +153,7 @@ PrintArray(array);
 Console.WriteLine();
 int pos = IndexOf(array, 4);
 Console.WriteLine(pos);
+*/
 
 
 
