@@ -26,7 +26,7 @@ else
 /*Задача 2: 
 Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.*/
 
-Console.Write("Input integer first number: ");
+/*Console.Write("Input integer first number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Input integer second number: ");
@@ -47,4 +47,21 @@ else if (num2 >= num1 && num2 >= num3)
 else if (num3 >= num1 && num3 >= num2) 
 {
     Console.Write("max number = " + num3);    
+}*/
+
+
+/*Задача 3: 
+Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным 
+(делится ли оно на два без остатка).*/
+
+Console.Write("Input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int a = num % 2;
+if (a == 0)
+{
+    Console.Write(num + " - number is even");
+}
+else
+{
+    Console.Write(num + " - number is not even");    
 }
