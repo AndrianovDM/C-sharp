@@ -54,7 +54,7 @@ else if (num3 >= num1 && num3 >= num2)
 Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным 
 (делится ли оно на два без остатка).*/
 
-Console.Write("Input integer number: ");
+/*Console.Write("Input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int a = num % 2;
 if (a == 0)
@@ -64,4 +64,22 @@ if (a == 0)
 else
 {
     Console.Write(num + " - number is not even");    
+}*/
+
+
+/*Задача 4: 
+Напишите программу, которая на вход принимает число (N), а 
+на выходе показывает все чётные числа от 1 до N.*/
+
+Console.Write("input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int current = 1;
+int a;
+
+while(current <= num)
+{   a = current % 2;
+    if (a == 0)
+        {Console.Write(current + " ");
+        }
+    current++;
 }
