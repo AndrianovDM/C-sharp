@@ -68,7 +68,7 @@ Console.WriteLine(a);
 */
 
 /*Задача №2*/
-
+/*
 void ShowNumber()
 {
     int num = new Random().Next(100,999);
@@ -78,4 +78,26 @@ void ShowNumber()
     Console.WriteLine(num + " -> " + Convert.ToInt32(number));
 }
 ShowNumber();
+*/
+
+/*Задача №3*/
+
+void IfMultiple()
+{
+    Console.Write("Input first number: ");
+    int num1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Input second number: ");
+    int num2 = Convert.ToInt32(Console.ReadLine());
+    if (num1 % num2 == 0)
+    {
+        Console.Write(num1 + " is multipe of " + num2);
+    }
+    else
+    {
+       Console.Write(num1 + " is NOT multipe of " + num2); 
+    }
+}
+IfMultiple();
+
+
 
