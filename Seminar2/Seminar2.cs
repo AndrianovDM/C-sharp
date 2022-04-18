@@ -81,7 +81,7 @@ ShowNumber();
 */
 
 /*Задача №3*/
-
+/*
 void IfMultiple()
 {
     Console.Write("Input first number: ");
@@ -98,6 +98,24 @@ void IfMultiple()
     }
 }
 IfMultiple();
+*/
+
+/*Задача №4*/
+
+void Multiple()
+{
+    Console.Write("Input integer number: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    if (num % 23 == 0 && num % 7 == 0)
+    {
+        Console.Write(num + " is multipe of " + "23 and 7 " );
+    }
+    else
+    {
+       Console.Write(num + " is NOT multipe of " + "23 and 7 " );
+    }
+}
+Multiple();
 
 
 
