@@ -101,7 +101,7 @@ IfMultiple();
 */
 
 /*Задача №4*/
-
+/*
 void Multiple()
 {
     Console.Write("Input integer number: ");
@@ -116,6 +116,29 @@ void Multiple()
     }
 }
 Multiple();
+*/
+
+/*Задача №5*/
+
+void Square(int num1, int num2)
+{
+    if (num1 == num2 * num2)
+    {
+        Console.Write(num1 + " is square of " + num2);
+    }
+    else
+    {
+       Console.Write(num1 + " is NOT square of " + num2); 
+    }
+}
+
+Console.Write("Input first number: ");
+int n1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input second number: ");
+int n2 = Convert.ToInt32(Console.ReadLine());
+
+Square(n1, n2); 
+
 
 
 
