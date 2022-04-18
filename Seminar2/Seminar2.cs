@@ -44,7 +44,7 @@ Console.WriteLine(a);
 */
 
 /*Задача №1.2*/
-
+/*
 int ShowNumber(int n)
 {
     int firtsNum = n / 10;
@@ -65,3 +65,17 @@ int ShowNumber(int n)
 int num = new Random().Next(10,99);
 int a = ShowNumber(num);
 Console.WriteLine(a);
+*/
+
+/*Задача №2*/
+
+void ShowNumber()
+{
+    int num = new Random().Next(100,999);
+    int firstNum = (num / 100) % 10;
+    int secondNum = num % 10;
+    string number = Convert.ToString(firstNum) + Convert.ToString(secondNum);
+    Console.WriteLine(num + " -> " + Convert.ToInt32(number));
+}
+ShowNumber();
+
