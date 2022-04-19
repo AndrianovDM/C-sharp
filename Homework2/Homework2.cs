@@ -52,7 +52,7 @@ ThirdNumber(a);
 Напишите программу, которая принимает на вход цифру, 
 обозначающую день недели, и проверяет, является ли этот день выходным.
 */
-
+/*
 void DaysWeek(int num)
 { 
     {if (1 == num || 2 == num || 3 == num || 4 == num || 5 == num)
@@ -72,5 +72,6 @@ void DaysWeek(int num)
 Console.Write("Input day: ");
 int a = Convert.ToInt32(Console.ReadLine());
 DaysWeek(a);
+*/
 
 
