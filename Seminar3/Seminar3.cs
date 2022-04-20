@@ -60,6 +60,21 @@ else
 }
 */
 
+/*Задача №3*/
 
+double distance( int xA, int yA, int xB, int yB)
+{
+    return Math.Sqrt(((xA - xB) * (xA - xB)) + ((yA - yB) * (yA - yB)));
+}
 
+Console.Write("Input X coordinate of the point A: ");
+int Ax = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input Y coordinate of the point A: ");
+int Ay = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input X coordinate of the point B: ");
+int Bx = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input Y coordinate of the point B: ");
+int By = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("distance AB: " + distance(Ax, Ay, Bx, By));
 
