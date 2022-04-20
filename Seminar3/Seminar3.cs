@@ -80,7 +80,7 @@ Console.Write("distance AB: " + distance(Ax, Ay, Bx, By));
 */
 
 /*Задача №4*/
-
+/*
 void sqr(int N)
 {   int count = 1;
     Console.Write(N + " -> ");
@@ -102,3 +102,4 @@ else
 {
     Console.Write("Input positive number");
 }
+*/
