@@ -61,7 +61,7 @@ else
 */
 
 /*Задача №3*/
-
+/*
 double distance( int xA, int yA, int xB, int yB)
 {
     return Math.Sqrt(((xA - xB) * (xA - xB)) + ((yA - yB) * (yA - yB)));
@@ -77,4 +77,28 @@ Console.Write("Input Y coordinate of the point B: ");
 int By = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("distance AB: " + distance(Ax, Ay, Bx, By));
+*/
 
+/*Задача №4*/
+
+void sqr(int N)
+{   int count = 1;
+    Console.Write(N + " -> ");
+    Console.Write(count*count);
+    count++;
+    while (count <= N)
+    {   
+        Console.Write(", " + count*count);
+        count++;
+    }
+}
+Console.Write("Input number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num > 0)
+{
+    sqr(num);
+}
+else
+{
+    Console.Write("Input positive number");
+}
