@@ -64,7 +64,7 @@ Console.Write("distance AB: " + distance(Ax, Ay, Az, Bx, By, Bz));
 
 /*Напишите программу, которая принимает на вход число (N)
 и выдаёт таблицу кубов чисел от 1 до N.*/
-
+/*
 void cubeTable(int N)
 {   
     int count = 1;
@@ -87,4 +87,5 @@ else
 {
     Console.Write("Input positive number");
 }
+*/
 
