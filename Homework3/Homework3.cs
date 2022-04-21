@@ -1,8 +1,8 @@
 ﻿/*Задача #19
 
 Напишите программу, которая принимает на вход пятизначное число
- и проверяет, является ли оно палиндромом.*/
-
+и проверяет, является ли оно палиндромом.*/
+/*
  void polindrom(int n)
  {  
     int numberLeftFirst = n / 10000;
@@ -30,4 +30,32 @@ else
 {   Console.WriteLine("ERROR");
     Console.Write("Input five-digit number");
 }
+*/
+
+/* Задача №21
+
+Напишите программу, которая принимает на вход координаты двух точек
+и находит расстояние между ними в 3D пространстве.
+*/
+
+double distance( int xA, int yA, int zA, int xB, int yB, int zB)
+{
+    return Math.Sqrt(((xA - xB) * (xA - xB)) + ((yA - yB) * (yA - yB)) + ((zA - zB) * (zA - zB)));
+}
+
+Console.Write("Input X coordinate of the point A: ");
+int Ax = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input Y coordinate of the point A: ");
+int Ay = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input Z coordinate of the point A: ");
+int Az = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input X coordinate of the point B: ");
+int Bx = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input Y coordinate of the point B: ");
+int By = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input Z coordinate of the point B: ");
+int Bz = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("distance AB: " + distance(Ax, Ay, Az, Bx, By, Bz));
 
