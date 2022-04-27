@@ -78,7 +78,7 @@ PrintArray(array);
 */
 
 /*Задача №5*/
-
+/*
 int[] CreateRandomArray(int size, int min, int max)
 {
     int[] array = new int[size];
@@ -138,3 +138,4 @@ void FindSumOfElements(int[] array)
 int[] myArray = CreateRandomArray(6, -5, 5);
 ShowArray(myArray);
 FindSumOfElements(myArray);
+*/
