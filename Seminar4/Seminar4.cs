@@ -46,7 +46,7 @@ Console.WriteLine("Faktorial: " + Faktorial(num));
 */
 
 /*Задача №3*/
-
+/*
 int GetDigitAmount(int num)
 {
     int count = 0;
@@ -60,5 +60,22 @@ int GetDigitAmount(int num)
 Console.WriteLine("Input number:");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Amount of digits is: " + GetDigitAmount(num));
+*/
+
+/*Задача №4*/
+
+int[] PrintArray(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        arr[i] = new Random().Next(0,2);
+        Console.Write(arr[i]+" ");
+    }
+    return arr;
+}
+int [] array = new int[9];
+PrintArray(array);
+
+
 
 
