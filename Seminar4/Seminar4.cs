@@ -25,7 +25,7 @@ Console.WriteLine("Sum elementis: " + NaturalSum(num));
 */
 
 /*Задача №2*/
-
+/*
 int Faktorial(int a)
 {   
     int faktor = 1;
@@ -43,5 +43,22 @@ int Faktorial(int a)
 Console.WriteLine("Input number:");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Faktorial: " + Faktorial(num));
+*/
+
+/*Задача №3*/
+
+int GetDigitAmount(int num)
+{
+    int count = 0;
+    while (num > 0)
+    {
+        num = num/ 10;
+        count++;
+    }
+    return count;
+}
+Console.WriteLine("Input number:");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Amount of digits is: " + GetDigitAmount(num));
 
 
