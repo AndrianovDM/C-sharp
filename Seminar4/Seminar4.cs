@@ -63,7 +63,7 @@ Console.WriteLine("Amount of digits is: " + GetDigitAmount(num));
 */
 
 /*Задача №4*/
-
+/*
 int[] PrintArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
@@ -75,7 +75,66 @@ int[] PrintArray(int[] arr)
 }
 int [] array = new int[9];
 PrintArray(array);
+*/
+
+/*Задача №5*/
+
+int[] CreateRandomArray(int size, int min, int max)
+{
+    int[] array = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = new Random ().Next(min, max);
+    }
+
+    return array;
+}
+
+int[] CreateArray(int size)
+{
+    int[] array = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        Console.WriteLine("Input " + i +" element");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+
+    return array;
+}
+
+void ShowArray(int [] array)
+{
+    for (int i =0; i< array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+void FindSumOfElements(int[] array)
+
+{
+    int plusSum = 0;
+    int minusSum = 0;
+
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i]>0)
+        {
+            plusSum += array[i];
+        }
+        else
+        {
+            minusSum += array[i];
+        }
+    }
+    Console.WriteLine("Sum of positive elements is " + plusSum);
+    Console.WriteLine("Sum of negative elements is " + minusSum);
+}
 
 
-
-
+int[] myArray = CreateRandomArray(6, -5, 5);
+ShowArray(myArray);
+FindSumOfElements(myArray);
