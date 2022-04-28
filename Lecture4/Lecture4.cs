@@ -121,7 +121,7 @@ for (int i = 1; i < 40; i++)
 */
 
 /*Задача №3*/
-
+/*
 double Fibonachi(int n)
 {
     if (n==1 || n==2) return 1;
@@ -132,4 +132,6 @@ for (int i = 1; i < 50; i++)
 {
     Console.WriteLine($"f({i}) = Fibonachi {Fibonachi(i)}");
 }
+*/
+
 
