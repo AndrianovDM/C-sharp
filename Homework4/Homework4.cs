@@ -93,7 +93,7 @@ SumUnevenPosition(myArray);
 Задайте массив вещественных чисел.
 Найдите разницу между максимальным и минимальным элементов массива.
 */
-
+/*
 int[] CreateRandomArray(int size, int min, int max)
 {
     int[] array = new int[size];
@@ -146,6 +146,7 @@ void DifferenceMaxMin(int [] array)
 int[] myArray = CreateRandomArray(4, 1, 100);
 ShowArray(myArray);
 DifferenceMaxMin(myArray);
+*/
 
 
 
