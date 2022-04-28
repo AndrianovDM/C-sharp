@@ -45,7 +45,7 @@ PrintArray(matrix);
 */
 
 /*Задача №1*/
-
+/*
 int [,] pic = new int [,]
 {
 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -103,5 +103,22 @@ void FillImage(int row, int col)
 PrintImage(pic);
 FillImage(13,13);
 PrintImage(pic);
+*/
+
+/*Задача №2*/
+
+double Factorial (int n)
+{   // 1! = 1
+    // 0! = 1
+    if (n == 1) return 1;
+    else return n* Factorial(n-1);
+}
+
+for (int i = 1; i < 40; i++)
+{
+    Console.WriteLine($"{i}! = Factorial {Factorial(i)}");
+}
+
+
 
 
