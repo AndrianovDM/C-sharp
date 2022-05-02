@@ -63,7 +63,7 @@ Console.WriteLine("Sum number: " + sumNumber(num));
 Напишите программу, 
 которая задаёт массив из 8 элементов и выводит их на экран.
 */
-
+/*
 int[] CreateRandomArray(int size, int min, int max)
 {
     int[] array = new int[size];
@@ -100,3 +100,4 @@ int[] myArray = CreateRandomArray(8, 0, 99);
 ShowArray(myArray);
 Console.WriteLine();
 printArray(myArray);
+*/
