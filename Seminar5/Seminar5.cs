@@ -1,5 +1,5 @@
 ﻿/*Задача №1*/
-
+/*
 int[] CreateRandomArray(int size, int min, int max)
 {
     int[] array = new int[size];
@@ -35,4 +35,34 @@ ShowArray(myArray);
 Console.WriteLine();
 int[] array = ChangeNums(myArray);
 ShowArray(myArray);
+*/
+
+/*Задача №2*/
+
+int[] massiv = {3, 54, 431, 43, 21};
+
+string CheckNuminArray(int[] array, int number)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] == number) 
+        {
+            return "Yes";
+        }
+    }
+    return "No";
+}
+
+Console.WriteLine("Input number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(CheckNuminArray(massiv, num));
+
+
+
+
+
+
+
+
+
 
