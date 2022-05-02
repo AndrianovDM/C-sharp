@@ -59,7 +59,7 @@ Console.WriteLine(CheckNuminArray(massiv, num));
 */
 
 /*Задача №3*/
-
+/*
 int[] CreateRandomArray(int size, int min, int max)
 {
     int[] array = new int[size];
@@ -99,6 +99,50 @@ ShowArray(myArray);
 Console.WriteLine();
 int numb = FindNumbs(myArray);
 Console.WriteLine(numb);
+*/
+
+/*Задача №4*/
+
+int[] CreateRandomArray(int size, int min, int max)
+{
+    int[] array = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = new Random ().Next(min, max);
+    }
+
+    return array;
+}
+
+void ShowArray(int [] array)
+{
+    for (int i =0; i< array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+int[] NewMagicArray(int[] array)
+{
+    int newSize = array.Length/2;
+    int[] newArray = new int[newSize];
+
+    for (int i = 0, j= array.Length -1; i < newSize; i++, j--)
+    {
+        newArray[i] = array[i] * array[j];
+    }
+    return newArray;
+}
+
+int[] arr = CreateRandomArray(6, 1, 9);
+ShowArray(arr);
+Console.WriteLine();
+int[] newArr = NewMagicArray(arr);
+ShowArray(newArr);
+
+
 
 
 
