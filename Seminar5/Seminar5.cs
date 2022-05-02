@@ -102,7 +102,7 @@ Console.WriteLine(numb);
 */
 
 /*Задача №4*/
-
+/*
 int[] CreateRandomArray(int size, int min, int max)
 {
     int[] array = new int[size];
@@ -141,6 +141,7 @@ ShowArray(arr);
 Console.WriteLine();
 int[] newArr = NewMagicArray(arr);
 ShowArray(newArr);
+*/
 
 
 
