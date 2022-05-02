@@ -1,2 +1,29 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*
+Задача №1
+Напишите цикл, который принимает на вход два числа (A и B)
+и возводит число A в натуральную степень B.
+*/
+
+int degreeOfNumber(int A, int B)
+{
+    int num = A;
+    if (B > 0)
+    {   
+        for (int i = 1; i < B; i++)
+        {
+            num = num * A;   
+        }
+    }
+    else
+    {
+        Console.Write(B +" Not a natural number ");  
+    }
+    return(num);
+}
+
+Console.Write("Input number: ");
+int numA = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input degree: ");
+int numB = Convert.ToInt32(Console.ReadLine());
+int number = degreeOfNumber(numA,numB);
+Console.Write(number);
