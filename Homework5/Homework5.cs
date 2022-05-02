@@ -34,7 +34,7 @@ Console.Write(number);
 Напишите программу, которая принимает на 
 вход число и выдаёт сумму цифр в числе.
 */
-
+/*
 int getNumber(int num)
 {
     int number = num%10;
@@ -56,3 +56,47 @@ int sumNumber(int num)
 Console.WriteLine("Input number:");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Sum number: " + sumNumber(num));
+*/
+
+/* Задача №3 */
+/*
+Напишите программу, 
+которая задаёт массив из 8 элементов и выводит их на экран.
+*/
+
+int[] CreateRandomArray(int size, int min, int max)
+{
+    int[] array = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = new Random ().Next(min, max);
+    }
+
+    return array;
+}
+
+void ShowArray(int [] array)
+{
+    for (int i =0; i< array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+void printArray(int[] array)
+{
+    Console.Write("[");
+    int len =array.Length;
+    for (int i = 0; i < len; i++)
+    {
+        Console.Write("{0}, ", array[i]);
+    }
+    Console.Write("]");
+}
+
+int[] myArray = CreateRandomArray(8, 0, 99);
+ShowArray(myArray);
+Console.WriteLine();
+printArray(myArray);
