@@ -38,7 +38,7 @@ ShowArray(myArray);
 */
 
 /*Задача №2*/
-
+/*
 int[] massiv = {3, 54, 431, 43, 21};
 
 string CheckNuminArray(int[] array, int number)
@@ -56,6 +56,49 @@ string CheckNuminArray(int[] array, int number)
 Console.WriteLine("Input number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(CheckNuminArray(massiv, num));
+*/
+
+/*Задача №3*/
+
+int[] CreateRandomArray(int size, int min, int max)
+{
+    int[] array = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = new Random ().Next(min, max+1);
+    }
+
+    return array;
+}
+
+void ShowArray(int [] array)
+{
+    for (int i =0; i< array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+int FindNumbs(int[] array)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i]>= 10 && array[i] <= 99)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+int [] myArray = CreateRandomArray(15,-10, 1000);
+ShowArray(myArray);
+Console.WriteLine();
+int numb = FindNumbs(myArray);
+Console.WriteLine(numb);
 
 
 
