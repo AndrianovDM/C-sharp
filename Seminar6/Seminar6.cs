@@ -57,7 +57,7 @@ ShowArray(newArr);
 */
 
 /*Задача №3*/
-
+/*
 void ShowArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -83,4 +83,5 @@ if (num >1)
     ShowArray(newArray);
 }
 else Console.WriteLine("0");
+*/
 
