@@ -20,7 +20,7 @@ else
 */
 /*Задача №2*/
 /* Развернуть массив */
-
+/*
 int [] CreateRandomArray(int size, int min, int max)
 {
     int [] array = new int[size];
@@ -54,3 +54,33 @@ int [] newArr = NewArray(myArray);
 ShowArray(myArray);
 Console.WriteLine();
 ShowArray(newArr);
+*/
+
+/*Задача №3*/
+
+void ShowArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+}
+
+int[] Fibonachi( int num)
+{
+    int[] array = new int[num];
+    array[0] = 0;
+    array[1] = 1;
+    for (int i = 2; i < num; i++)
+    {
+        array[i] = array[i-1] + array[i-2];
+    }
+    return array;
+}
+Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num >1)
+{
+    int[] newArray = Fibonachi(num);
+    ShowArray(newArray);
+}
+else Console.WriteLine("0");
+
