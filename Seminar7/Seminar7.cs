@@ -1,5 +1,5 @@
 ﻿/*Задача №1*/
-
+/*
 int SumOfDiagonal(int[,] quad)
 {
     int sum = 0;
@@ -27,3 +27,22 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 }
 
 Console.WriteLine(SumOfDiagonal(matrix));
+
+/*Задача №2*/
+
+int [,] CreateArray(int size1, int size2)
+{
+    int[,] array = new int [size1,size2];
+    for (int i = 0; i < size1; i++)
+    {
+        for (int j =0; j <size2; j++)
+        {
+            array[i, j] = i + j;
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+    return array;
+}
+CreateArray(3,3);
+
