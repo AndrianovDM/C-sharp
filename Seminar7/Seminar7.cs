@@ -48,7 +48,7 @@ CreateArray(3,3);
 */
 
 /*Задача №3*/
-
+/*
 int [,] CreateArray2(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i+=2)
@@ -83,6 +83,8 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 ShowArray(matrix);
 Console.WriteLine();
 ShowArray(CreateArray2(matrix));
+*/
+
 
 
 
