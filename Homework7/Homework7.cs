@@ -74,7 +74,7 @@ else
 Задайте двумерный массив из целых чисел. 
 Найдите среднее арифметическое элементов в каждом столбце.
 */
-
+/*
 int[,] matrix = new int[4, 4];
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
@@ -95,6 +95,7 @@ for (int i = 0; i < matrix.GetLength(1); i++)
     }
     Console.Write(arithmeticMean/4 + ", ");
 }
+*/
 
 
 
