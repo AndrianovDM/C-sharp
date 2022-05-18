@@ -86,12 +86,14 @@ for (int i = 0; i < matrix.GetLength(0); i++)
     Console.WriteLine();
 }
 Console.WriteLine();
-for (int i = 0; i < matrix.GetLength(1); i++)
+for (int i = 0; i < matrix.GetLength(0); i++)
 {   
     double arithmeticMean = 0;
-    for (int j = 0; j < matrix.GetLength(0); j++)
+    double[,] newMatrix = new double[matrix.GetLength(0),matrix.GetLength(1)];
+    for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        arithmeticMean += matrix[i, j];
+        newMatrix[i, j] = matrix[j, i];
+        arithmeticMean += newMatrix[i, j];
     }
     Console.Write(arithmeticMean/4 + ", ");
 }
