@@ -110,7 +110,7 @@ else
 */
 
 /* Задача №3 */
-
+/*
 int[,] CreateArray(int n , int m)
 {
     int [,] array = new int [n, m];
@@ -172,3 +172,4 @@ else
 {
     Console.WriteLine(" Cannot change row to column. Matrix is not square");
 }
+*/
