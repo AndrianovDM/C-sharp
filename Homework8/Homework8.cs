@@ -70,7 +70,7 @@ PrintArray(OrderedArray(arr));
 Задайте прямоугольный двумерный массив. 
 Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 */
-
+/*
 int[,] CreateArray(int n , int m)
 {
     int [,] array = new int [n,m];
@@ -139,3 +139,4 @@ Console.WriteLine("Sum of each line: ");
 PrintArray(widthSumElements(arr));
 Console.WriteLine(" ");
 SmallestElement(widthSumElements(arr));
+*/
