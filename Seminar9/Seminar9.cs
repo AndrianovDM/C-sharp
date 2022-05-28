@@ -13,7 +13,7 @@ void NaturalNums(int n)
 */
 
 /* Задача№2 */
-
+/*
 int TestRecurse(int n , int m)
 {
     if (m >= 1)
@@ -26,3 +26,4 @@ int TestRecurse(int n , int m)
 }
 
 Console.Write(TestRecurse(2,4));
+*/
