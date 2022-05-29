@@ -123,7 +123,7 @@ FindWords("аисв", new char[5]);
 */
 
 /* Задача №7 */
-
+/*
 String path = "B:/KTZ";
 DirectoryInfo di = new DirectoryInfo(path);
 System.Console.WriteLine(di.CreationTime);
@@ -133,7 +133,26 @@ for (int i = 0; i < fi.Length; i++)
 {
     System.Console.WriteLine(fi[i].Name);
 }
+*/
 
+
+/* Задача №8 */
+
+void CatalogInfo(string path, string indent = "")
+{
+ DirectoryInfo catalogs = new DirectoryInfo(path);
+ foreach (var currentCatalog in catalogs.GetDirectories())
+ {
+ Console.WriteLine($"{indent}{currentCatalog.Name}");
+ CatalogInfo(currentCatalog.FullName, indent + " ");
+ }
+ foreach (var item in catalogs.GetFiles())
+ {
+ Console.WriteLine($"{indent}{item.Name}");
+ }
+}
+string path = @"B:/KTZ";
+CatalogInfo(path);
 
 
 
