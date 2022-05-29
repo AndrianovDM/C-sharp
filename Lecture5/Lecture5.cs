@@ -106,7 +106,7 @@ for (int i = 0; i < count; i++)
 */
 
 /* Задача №6 */
-
+/*
 void FindWords(string alphabet, char[] word, int length = 0)
 {
  if (length == word.Length)
@@ -120,6 +120,19 @@ void FindWords(string alphabet, char[] word, int length = 0)
  }
 }
 FindWords("аисв", new char[5]);
+*/
+
+/* Задача №7 */
+
+String path = "B:/KTZ";
+DirectoryInfo di = new DirectoryInfo(path);
+System.Console.WriteLine(di.CreationTime);
+FileInfo[] fi = di.GetFiles();
+
+for (int i = 0; i < fi.Length; i++)
+{
+    System.Console.WriteLine(fi[i].Name);
+}
 
 
 
