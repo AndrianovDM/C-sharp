@@ -43,7 +43,7 @@ Console.WriteLine(SumFor(10));
 */
 /* Задача №3 */
 // без применнения рекурсии
-
+/*
 int FactorialFor(int n)
 {
  int result = 1;
@@ -59,8 +59,26 @@ int FactorialRec(int n)
  else return n * FactorialRec(n - 1);
 }
 Console.WriteLine(FactorialFor(10)); 
- 
+*/
 
+/* Задача №4 */
+
+// без применнения рекурсии
+int PowerFor(int a, int n)
+{ int result = 1;
+ for (int i = 1; i <= n; i++) result *= a;
+ return result;
+}
+
+Console.WriteLine(PowerFor(2, 10)); 
+
+// с помощью рекурсии
+int PowerRec(int a, int n)
+{ return n == 0 ? 1 : PowerRec(a, n - 1) * a;
+ else return PowerRec(a, n - 1) * a;
+}
+
+Console.WriteLine(PowerRec(2, 10)); 
 
 
 
