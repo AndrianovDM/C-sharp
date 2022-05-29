@@ -16,7 +16,7 @@ Console.WriteLine(CountEven(names));
 */
 
 /* Задача № 2 */
-
+/*
 string[] names = {"Pavel", "Oleg", "Anna", "Nikita", "Max"};
 
 string[] SortArray(string[] words)
@@ -60,3 +60,5 @@ void PrintArray(string[] array)
 }
 
 PrintArray(SortArray(names));
+*/
+
