@@ -23,6 +23,7 @@ Console.WriteLine(NumbersFor(1, 10));
 */
 
 /* Задача №2 */
+/*
 // без применнения рекурсии
 int SumFor(int n)
 {
@@ -39,6 +40,26 @@ int SumRec(int n)
  else return n + SumRec(n - 1);
 }
 Console.WriteLine(SumFor(10)); 
+*/
+/* Задача №3 */
+// без применнения рекурсии
+
+int FactorialFor(int n)
+{
+ int result = 1;
+ for (int i = 1; i <= n; i++) result *= i;
+ return result;
+}
+Console.WriteLine(FactorialRec(10));
+
+// с помощью рекурсии
+int FactorialRec(int n)
+{
+ if (n == 1) return 1;
+ else return n * FactorialRec(n - 1);
+}
+Console.WriteLine(FactorialFor(10)); 
+ 
 
 
 
