@@ -39,7 +39,7 @@ Console.WriteLine("-> " + "number of words starting with vowels: " + NumberOfVow
 Напишите программу, которая генерирует новый массив,
  объединяя элементы исходного массива попарно.
  */
-
+/*
 void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -63,4 +63,7 @@ PrintArray(words);
 Console.WriteLine();
 Console.WriteLine("Union of elements: ");
 PrintArray(SumWords(words));
+*/
+
+
 
